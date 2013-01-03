@@ -36,69 +36,8 @@ $(document).ready(function () {
 
 // Backbone.sync
 Backbone.sync = function (method, model, options) {
-    // Include web service key.
-    CommonManager.addApiKey(model, apiKey);
-
-    if (method == 'create') {
-        $.ajax({
-            url: '/create',
-            type: 'POST',
-            data: CommonManager.encodeId(JSON.stringify(model)),
-            contentType: 'application/json',
-            dataType: 'json',
-            success: function (data) {
-                options.success(model);
-            }
-        });
-    }
-    else if (method == 'read') {
-    }
-    else if (method == 'update') {
-        $.ajax({
-            url: restUrl.replace('[id]', CommonManager.encodeId(model.id)),
-            type: 'GET',
-            dataType: 'jsonp',
-            success: function (data) {
-                if (data.length == 0) {
-                    // Create new entry.	
-                    $.ajax({
-                        url: '/create',
-                        type: 'POST',
-                        data: CommonManager.encodeId(JSON.stringify(model)),
-                        contentType: 'application/json',
-                        dataType: 'json',
-                        success: function (data) {
-                            options.success(model);
-                        }
-                    });
-                }
-                else {
-                    // Update existing entry.
-                    $.ajax({
-                        url: '/create/' + data[0]._id,
-                        type: 'PUT',
-                        data: CommonManager.encodeId(JSON.stringify(model)),
-                        contentType: 'application/json',
-                        dataType: 'json',
-                        success: function (data) {
-                            options.success(model);
-                        }
-                    });
-                }
-            }
-        });
-    }
-    else if (method == 'delete') {
-        $.ajax({
-            url: '/create/' + data[0]._id,
-            type: 'DELETE',
-            contentType: 'application/json',
-            dataType: 'json',
-            success: function (data) {
-                options.success(model);
-            }
-        });
-    }
+	// Read-only mode for demo.
+	options.success(model);
 };
 
 CommonManager = {
