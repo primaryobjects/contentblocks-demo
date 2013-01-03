@@ -1,0 +1,79 @@
+extends layout
+
+block content
+    #body
+      #home
+        h1 Simple editable CMS content blocks in Node.js
+        .content
+          div
+            h2(about='LeftHeader')
+              div(property='content')
+                if typeof(LeftHeader_content) !== 'undefined'
+                  span!= LeftHeader_content
+                else
+                  [edit here]
+
+            ul.services
+              li
+                img(src='/images/planet1.png', alt='Image')
+                span(about='Paragraph1')
+                  div(property='content')
+                    if typeof(Paragraph1_content) !== 'undefined'
+                      span!= Paragraph1_content
+                    else
+                      [edit here]
+              li
+                img(src='/images/planet2.png', alt='Image')
+                span(about='Paragraph2')
+                  div(property='content')
+                    if typeof(Paragraph2_content) !== 'undefined'
+                      span!= Paragraph2_content
+                    else
+                      [edit here]
+              li
+                img(src='/images/planet3.png', alt='Image')
+                span(about='Paragraph3')
+                  div(property='content')
+                    if typeof(Paragraph3_content) !== 'undefined'
+                      span!= Paragraph3_content
+                    else
+                      [edit here]
+              li
+                img(src='/images/planet4.png', alt='Image')
+                span(about='Paragraph4')
+                  div(property='content')
+                    if typeof(Paragraph4_content) !== 'undefined'
+                      span!= Paragraph4_content
+                    else
+                      [edit here]
+        .sidebar
+          div
+            h2(about='RightHeader')
+              div(property='content')
+                if typeof(RightHeader_content) !== 'undefined'
+                  span!= RightHeader_content
+                else
+                  [edit here]
+
+            img(src='/images/planet5.png', alt='Image')
+            h3(about='Paragraph5')
+              div(property='content')
+                if typeof(Paragraph5_content) !== 'undefined'
+                  span!= Paragraph5_content
+                else
+                  [edit here]
+          div
+            h2(about='BottomHeader')
+              div(property='content')
+                if typeof(BottomHeader_content) !== 'undefined'
+                  span!= BottomHeader_content
+                else
+                  [edit here]
+            ul
+              li
+                span(about='Paragraph6')
+                  div(property='content')
+                    if typeof(Paragraph6_content) !== 'undefined'
+                      span!= Paragraph6_content
+                    else
+                      [edit here]

@@ -1,0 +1,625 @@
+/* Website template by freewebsitetemplates.com */
+body {
+	background: #e8e8e8 url(../images/bg-body.png) repeat-x;
+	color: #636466;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	letter-spacing: 0.05em;
+	margin: 0;
+	min-width: 960px;
+	padding: 0;
+}
+a {
+	outline: none;
+}
+img {
+	border: 0;
+}
+p {
+	letter-spacing: 0.05em;
+	line-height: 24px;
+	margin: 0;
+	text-align: justify;
+}
+p a {
+	color: #636466;
+}
+p a:hover,
+#body div#home div.content div ul.blog li div h3 a:hover,
+#body div.blog div.sidebar div ul li a:hover,
+#body div.blog div#article ul li h2 a:hover,
+#body div#contact div.content form div a#send:hover,
+#body a.more:hover {
+	color: #3c3d3f;
+	text-decoration: underline;
+}
+#header,
+#body,
+#footer {
+	margin: 0 auto;
+	width: 960px;
+}
+#header {
+	height: 80px;
+	overflow: hidden;
+	padding: 40px 0 0;
+}
+#header h1 {
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 36px;
+	font-weight: normal;
+	letter-spacing: 0.07em;
+	margin: 0;
+	padding: 0 0 0 22px;
+	text-transform: uppercase;
+}
+#header h1 a {
+	color: #ffffff;
+	text-decoration: none;
+}
+#header ul {
+	font-family: Arial, Helvetica, sans-serif;
+	float: right;
+	list-style: none;
+	margin: 0;
+	overflow: hidden;
+	padding: 10px 36px 0 0;
+}
+#header ul li {
+	border-left: 1px solid #3e3e3e;
+	float: left;
+	height: 25px;
+	padding: 0 15px;
+}
+#header ul li.current a,
+#header ul li a:hover {
+	color: #ffffff;
+}
+#header ul li:first-child {
+	border: none;
+}
+#header ul li a {
+	color: #868686;
+	display: block;
+	letter-spacing: 0.075em;
+	line-height: 20px;
+	text-decoration: none;
+}
+#body {
+	padding: 0 0 40px;
+}
+#body div#home, 
+#body div.services,
+#body div#contact {
+	padding: 30px 0 0;
+	overflow: hidden;
+}
+#body div#home h1,
+#body div.services h1,
+#body div#contact h1 {
+	border-bottom: 1px solid #000000;
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 52px;
+	font-weight: normal;
+	letter-spacing: 0.025em;
+	margin: 0 0 47px;
+	padding: 0 0 30px;
+	text-align: center;
+	text-transform: uppercase;
+}
+#body div#home h1 span {
+	text-transform: lowercase;
+}
+#body div#home div.content,
+#body div#contact div.content {
+	float: left;
+	width: 540px;
+}
+#body div#home div.content div {
+	padding: 40px 0 0;
+}
+#body div#home div.content div:first-child {
+	border-bottom: 1px solid #000000;
+	padding: 0 0 35px;
+}
+#body div#home div.content div ul.services {
+	list-style: none;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+}
+#body div#home div.content div ul.services li {
+	float: left;
+	margin: 0 20px 35px;
+	width: 230px;
+}
+#body div#home div.content div ul.services li p {
+	letter-spacing: 0.025em;
+}
+#body div#home div.content div ul.services li img {
+	border: 1px solid #000000;
+	display: block;
+	margin: 0 0 18px;
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+#body div#home div.content div ul.blog {
+	letter-spacing: 0.05em;
+	list-style: none;
+	margin: 0;
+	padding: 0 20px 0;
+}
+#body div#home div.content div ul.blog li {
+	display: block;
+	margin: 0 0 40px;
+	overflow: hidden;
+}
+#body div#home div.content div ul.blog li span {
+	display: block;
+	float: left;
+	width: 110px;
+}
+#body div#home div.content div ul.blog li span a img {
+	border: 1px solid #000000;
+	margin: 5px 0 0;
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+#body div#home div.content div ul.blog li span a img:hover,
+#body div.blog div#article ul li a img:hover {
+	filter: alpha(opacity=90);
+	opacity: 0.9;
+}
+#body div#home div.content div ul.blog li div {
+	float: right;
+	padding: 0;
+	width: 368px;
+}
+#body div#home div.content div ul.blog li div h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	margin: 0;
+	text-transform: uppercase;
+}
+#body div#home div.content div ul.blog li div h3 a {
+	color: #636466;
+	text-decoration: none;
+}
+#body div#home div.content div ul.blog li div span.date,
+#body div.blog div#article ul li span.date {
+	float: none;
+	line-height: 24px;
+	width: auto;
+}
+#body div#home div.content div h2,
+#body div#contact div.content h2,
+#body div#home div.sidebar div h2,
+#body div#contact div.sidebar div h2 {
+	color: #58595b;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+	letter-spacing: 0.05em;
+	margin: 0;
+	padding: 0 0 10px 20px;
+	text-transform: uppercase;
+}
+#body a.more {
+	color: #636466;
+	display: block;
+	letter-spacing: 0.05em;
+	padding: 0 20px;
+	text-decoration: none;
+}
+#body div.sidebar {
+	float: right;
+	width: 380px;
+}
+#body div#home div.sidebar div,
+#body div#contact div.sidebar div {
+	border-top: 1px solid #000000;
+	padding: 30px 20px 40px;
+}
+#body div#home div.sidebar div:first-child,
+#body div#contact div.sidebar div:first-child {
+	border: none;
+	padding: 0 20px 30px;
+}
+#body div#home div.sidebar div img,
+#body div#contact div.sidebar div img {
+	border: 1px solid #000000;
+	display: block;
+	margin: 0 0 15px;
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+#body div#home div.sidebar div h2,
+#body div#contact div.sidebar div h2 {
+	padding: 0 0 10px 0;
+}
+#body div#home div.sidebar div h3,
+#body div#contact div.sidebar div h3 {
+	display: block;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	line-height: 24px;
+	margin: 0;
+	text-align: justify;
+}
+#body div#home div.sidebar div ul,
+#body div#contact div.sidebar div ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#body div#home div.sidebar div ul li,
+#body div#contact div.sidebar div ul li {
+	margin: 0 0 35px;
+}
+#body div#home div.sidebar div ul li p span,
+#body div#contact div.sidebar div ul li p span {
+	font-style: italic;
+}
+#body div#home div.sidebar div a.more,
+#body div#contact div.sidebar div a.more {
+	padding: 0;
+}
+#body div#home div.sidebar div form,
+#body div#contact div.sidebar div form{
+	height: 38px;
+	margin: 0;
+	overflow: hidden;
+	padding: 5px 0 0;
+	width: 340px;
+}
+#body div#home div.sidebar div form input,
+#body div#contact div.sidebar div form input {
+	display: block;
+	float: left;
+}
+#body div#home div.sidebar div form input#email,
+#body div#contact div.sidebar div form input#email {
+	background: #ffffff;
+	border-bottom: 1px solid #b2b2b2;
+	border-top: 1px solid #b2b2b2;
+	border-left: 1px solid #b2b2b2;
+	border-right: 0;
+	color: #636466;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	height: 34px;
+	font-style: italic;
+	letter-spacing: 0.05em;
+	line-height: 34px;
+	text-indent: 10px;
+	width: 287px;
+}
+#body div#home div.sidebar div form input#submit,
+#body div#contact div.sidebar div form input#submit {
+	background: #000000;
+	border: none;
+	color: #ffffff;
+	cursor: pointer;
+	font-size: 14px;
+	height: 38px;
+	line-height: 38px;
+	text-transform: uppercase;
+	width: 50px;
+}
+#body div#home div.sidebar div form input#submit:hover,
+#body div#contact div.sidebar div form input#submit:hover {
+	background: #363636;
+}
+#body div.services h1 {
+	font-size: 23px;
+	letter-spacing: normal;
+	line-height: 50px;
+}
+#body div.services h1 a {
+	color: #000000;
+	text-decoration: none;
+}
+#body div.services h1 a:hover {
+	text-decoration: underline;
+}
+#body div.services div {
+	padding: 0 20px;
+}
+#body div.services div h2,
+#body div#testimonials h2 {
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+	letter-spacing: 0.05em;
+	margin: 0;
+	padding: 0 0 5px;
+	text-transform: uppercase;
+}
+#body div.services div p,
+#body div.blog div#article ul li p {
+	letter-spacing: 0.05em;
+}
+#body div.services ul {
+	list-style: none;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+}
+#body div.services ul.first {
+	margin: 25px 0 0;
+}
+#body div.services ul.first li {
+	border: none;
+}
+#body div.services ul li {
+	border-top: 1px solid #000000;
+	float: left;
+	margin: 0 0 0 40px;
+	padding: 25px 0;
+	width: 460px;
+}
+#body div.services ul li:first-child {
+	margin: 0;
+}
+#body div.services ul li div h3,
+#body div.blog div#article ul li h2,
+#body div.blog div.sidebar div h2,
+#body div#about div h2 {
+	color: #58595b;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	letter-spacing: 0.05em;
+	margin: 0;
+	padding: 0 0 5px;
+	text-transform: uppercase;
+}
+#body div.blog {
+	padding: 50px 0 0;
+	overflow: hidden;
+}
+#body div.blog div#article {
+	float: left;
+	width: 640px;
+}
+#body div.blog div#article ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#body div.blog div#article ul li {
+	border-top: 1px solid #000000;
+	padding: 30px 20px;
+}
+#body div.blog div#article ul li:first-child {
+	border: none;
+	overflow: hidden;
+	padding: 0 20px 30px;
+}
+#body div.blog div#article ul li a img {
+	border: 1px solid #000000;
+	display: block;
+	float: right;
+	margin: 30px 0 10px 20px;
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+#body div.blog div#article ul li h2 a {
+	color: #58595b;
+	text-decoration: none;
+}
+#body div.blog div#article ul li span.date {
+	letter-spacing: 0.05em;
+}
+#body div.blog div.sidebar {
+	float: right;
+	width: 280px;
+}
+#body div.blog div.sidebar div {
+	border-top: 1px solid #000000;
+	padding: 29px 20px 23px;
+}
+#body div.blog div.sidebar div:first-child {
+	border: none;
+	padding: 0 20px 23px;
+}
+#body div.blog div.sidebar div ul {
+	margin: 0;
+	padding: 0 0 0 15px;
+}
+#body div.blog div.sidebar div ul li {
+	letter-spacing: 0.075em;
+	line-height: 24px;
+}
+#body div.blog div.sidebar div ul li a {
+	color: #636466;
+	text-decoration: none;
+}
+#body div.blog div.sidebar div ul li a:hover {
+	color: #636466;
+	text-decoration: underline;
+}
+#body div#about {
+	padding: 50px 0;
+}
+#body div#about div {
+	border-top: 1px solid #000000;
+	padding: 25px 20px;
+}
+#body div#about div:first-child {
+	border: none;
+	padding: 0 20px 25px;
+}
+#body div#about div p span {
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	margin: 38px 0 0; 
+}
+#body div#testimonials {
+	background: #dddddd;
+	border-bottom: 1px solid #c6c6c6;
+	border-top: 1px solid #c6c6c6;
+	padding: 30px 20px 0;
+}
+#body div#testimonials h2 {
+	color: #58595b;
+	padding: 0 0 30px;
+}
+#body div#testimonials ul {
+	list-style: none;
+	margin: 0;
+	overflow: hidden;
+	padding: 0 0 50px;
+}
+#body div#testimonials ul li {
+	float: left;
+	margin: 0 0 0 60px;
+	width: 430px;
+}
+#body div#testimonials ul li:first-child {
+	margin: 0;
+}
+#body div#testimonials ul li span {
+	display: block;
+	font-style: italic;
+	line-height: 24px;
+	text-align: right;
+}
+#body div#contact h1 {
+	font-size: 50px;
+	letter-spacing: normal;
+	padding: 40px 0 55px;
+}
+#body div#contact div.content div {
+	padding: 0 20px;
+}
+#body div#contact div.content div h2 {
+	padding: 0 0 10px;
+}
+#body div#contact div.content form div h2 {
+	padding: 0 0 20px;
+}
+#body div#contact div.content div p span {
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	padding: 20px 0 0;
+	text-transform: uppercase;
+}
+#body div#contact div.content div p a.email {
+	text-decoration: none;
+}
+#body div#contact div.content div p a.email:hover {
+	color: #636466;
+}
+#body div#contact div.content form {
+	border-top: 1px solid #000000;
+	margin: 35px 0 0;
+	padding: 35px 0 0;
+}
+#body div#contact div.content form div {
+	padding: 0 20px;
+}
+#body div#contact div.content form div div {
+	overflow: hidden;
+	padding: 5px 0;
+}
+#body div#contact div.content form div div label {
+	display: block;
+	float: left;
+	height: 28px;
+	line-height: 28px;
+	margin: 0 10px 0 0;
+	text-align: right;
+	width: 100px;
+}
+#body div#contact div.content form div div input {
+	border: 1px solid #000000;
+	color: #636466;
+	display: block;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	float: left;
+	height: 28px;
+	letter-spacing: 0.052em;
+	line-height: 28px;
+	width: 380px;
+}
+#body div#contact div.content form div div textarea {
+	border: 1px solid #000000;
+	color: #636466;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	float: left;
+	height: 247px;
+	letter-spacing: 0.052em;
+	overflow: auto;
+	resize: none;
+	width: 380px;
+}
+#body div#contact div.content form div a#send {
+	color: #636466;
+	display: inline-block;
+	line-height: 48px;
+	margin: 0 0 0 110px;
+	text-decoration: none;
+}
+#footer {
+	border-top: 1px solid #000000;
+	min-height: 105px;
+	padding: 20px 20px 0;
+	width: 920px;
+}
+#footer div {
+	float: left;
+	overflow: hidden;
+	width: 135px;
+}
+#footer div a {
+	display: block;
+	float: left;
+	height: 22px;
+	text-indent: -99999px;
+}
+#footer div a#twitter {
+	background: url(../images/icons.png) no-repeat 0 -32px;
+	height: 21px;
+	margin: 0;
+	width: 29px;
+}
+#footer div a#twitter:hover {
+	background: url(../images/icons.png) no-repeat 0 -53px;
+}
+#footer div a#facebook {
+	background: url(../images/icons.png) no-repeat 0 0;
+	margin: 0 0 0 37px;
+	width: 10px;
+}
+#footer div a#facebook:hover {
+	background: url(../images/icons.png) no-repeat -10px 0;
+}
+#footer div a#googleplus {
+	background: url(../images/icons.png) no-repeat 0 -84px;
+	margin: 0 0 0 34px;
+	width: 22px;
+}
+#footer div a#googleplus:hover {
+	background: url(../images/icons.png) no-repeat 0 -106px;
+}
+#footer p {
+	float: right;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	letter-spacing: 0.075em;
+	line-height: 20px;
+	text-align: right;
+	width: 300px;
+}
