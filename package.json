@@ -5,7 +5,8 @@
     "express": "3.0.0rc1",
     "jade": "*",
 	"easypost": "*",
-	"cheerio": "*"
+	"cheerio": "*",
+	"contentblocks": "*"
   },
   "engines": {
     "node": "0.8.x",
