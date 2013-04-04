@@ -9,7 +9,7 @@ block content
             h2(about='LeftHeader')
               div(property='content')
                 if typeof(LeftHeader_content) !== 'undefined'
-                  span!= LeftHeader_content
+                  != LeftHeader_content
                 else
                   [edit here]
 
@@ -19,7 +19,7 @@ block content
                 span(about='Paragraph1')
                   div(property='content')
                     if typeof(Paragraph1_content) !== 'undefined'
-                      span!= Paragraph1_content
+                      != Paragraph1_content
                     else
                       [edit here]
               li
@@ -27,7 +27,7 @@ block content
                 span(about='Paragraph2')
                   div(property='content')
                     if typeof(Paragraph2_content) !== 'undefined'
-                      span!= Paragraph2_content
+                      != Paragraph2_content
                     else
                       [edit here]
               li
@@ -35,7 +35,7 @@ block content
                 span(about='Paragraph3')
                   div(property='content')
                     if typeof(Paragraph3_content) !== 'undefined'
-                      span!= Paragraph3_content
+                      != Paragraph3_content
                     else
                       [edit here]
               li
@@ -43,7 +43,7 @@ block content
                 span(about='Paragraph4')
                   div(property='content')
                     if typeof(Paragraph4_content) !== 'undefined'
-                      span!= Paragraph4_content
+                      != Paragraph4_content
                     else
                       [edit here]
         .sidebar
@@ -51,7 +51,7 @@ block content
             h2(about='RightHeader')
               div(property='content')
                 if typeof(RightHeader_content) !== 'undefined'
-                  span!= RightHeader_content
+                  != RightHeader_content
                 else
                   [edit here]
 
@@ -59,14 +59,14 @@ block content
             h3(about='Paragraph5')
               div(property='content')
                 if typeof(Paragraph5_content) !== 'undefined'
-                  span!= Paragraph5_content
+                  != Paragraph5_content
                 else
                   [edit here]
           div
             h2(about='BottomHeader')
               div(property='content')
                 if typeof(BottomHeader_content) !== 'undefined'
-                  span!= BottomHeader_content
+                  != BottomHeader_content
                 else
                   [edit here]
             ul
@@ -74,6 +74,6 @@ block content
                 span(about='Paragraph6')
                   div(property='content')
                     if typeof(Paragraph6_content) !== 'undefined'
-                      span!= Paragraph6_content
+                      != Paragraph6_content
                     else
                       [edit here]
