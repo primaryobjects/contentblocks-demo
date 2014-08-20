@@ -4,29 +4,28 @@
  */
 
 var express = require('express')
-  , app = express()
   , routes = require('./routes')
   , http = require('http')
   , path = require('path')
-  , contentBlocks = require('contentblocks')({ app: app, host: 'red-ant.herokuapp.com', pathFind: '/v1/nest/find?q={"@subject":"[id]"}', pathPost: '/v1/nest', pathPut: '/v1/nest/[id]', pathDelete: '/v1/nest/[id]' });
+  , bodyParser = require('body-parser')
+  , logger = require('morgan')
+  , methodOverride = require('method-override');
 
-app.configure(function(){
-  app.set('port', process.env.PORT || 3000);
-  app.set('views', __dirname + '/views');
-  app.set('view engine', 'jade');
-  app.use(express.favicon());
-  app.use(express.logger('dev'));
-  app.use(express.bodyParser());
-  app.use(express.methodOverride());
-  app.use(contentBlocks.render);
-  app.use(app.router);
-  app.use(express.static(path.join(__dirname, 'public')));
-});
+var app = express();
+var contentBlocks = require('contentblocks')({ app: app, host: 'red-ant.herokuapp.com', pathFind: '/v1/nest/find?q={"@subject":"[id]"}', pathPost: '/v1/nest', pathPut: '/v1/nest/[id]', pathDelete: '/v1/nest/[id]' });
 
-app.configure('development', function(){
-  app.use(express.errorHandler());
-  app.locals.pretty = true;
-});
+app.set('port', process.env.PORT || 3000);
+app.set('views', __dirname + '/views');
+app.set('view engine', 'jade');
+app.use(logger('dev'));
+app.use(contentBlocks.render);
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(methodOverride('_method'));
+app.use(express.static(path.join(__dirname, 'public')));
+
+if (app.get('env') == 'development') {
+	app.locals.pretty = true;
+}
 
 app.get('/', routes.index);
 
