@@ -5,6 +5,7 @@
 
 var express = require('express')
   , routes = require('./routes')
+  , cms = require('./routes/cms')
   , http = require('http')
   , path = require('path')
   , bodyParser = require('body-parser')
@@ -12,7 +13,7 @@ var express = require('express')
   , methodOverride = require('method-override');
 
 var app = express();
-var contentBlocks = require('contentblocks')({ app: app, host: 'red-ant.herokuapp.com', pathFind: '/v1/nest/find?q={"@subject":"[id]"}', pathPost: '/v1/nest', pathPut: '/v1/nest/[id]', pathDelete: '/v1/nest/[id]' });
+var contentBlocks = require('contentblocks')({ app: app, host: 'localhost', port: 3000, pathFind: '/cms/find?q={"@subject":"[id]"}', pathPost: '/cms', pathPut: '/cms/[id]', pathDelete: '/cms/[id]' });
 
 app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/views');
@@ -28,6 +29,13 @@ if (app.get('env') == 'development') {
 }
 
 app.get('/', routes.index);
+
+// REST API routes.
+app.get('/cms/find', cms.find);
+app.get('/cms/:itemId', cms.get);
+app.put('/cms/:itemId', cms.update);
+app.delete('/cms/:itemId', cms.delete);
+app.post('/cms', cms.insert);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
