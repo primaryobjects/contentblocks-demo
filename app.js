@@ -12,7 +12,7 @@ var express = require('express')
   , methodOverride = require('method-override');
 
 var app = express();
-var contentBlocks = require('contentblocks')({ app: app, host: 'red-ant.herokuapp.com', pathFind: '/v1/nest/find?q={"@subject":"[id]"}', pathPost: '/v1/nest', pathPut: '/v1/nest/[id]', pathDelete: '/v1/nest/[id]' });
+var contentBlocks = require('contentblocks')({ app: app, host: 'red-ant.herokuapp.com', port: 80, pathFind: '/v1/nest/find?q={"@subject":"[id]"}', pathPost: '/v1/nest', pathPut: '/v1/nest/[id]', pathDelete: '/v1/nest/[id]' });
 
 app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/views');
